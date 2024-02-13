@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=IBM+Plex+Sans+Arabic:wght@300&family=Karantina:wght@300&family=Philosopher:ital,wght@1,700&family=Red+Hat+Display:wght@300&family=Rubik&display=swap');
+
+
+.font {
+    font-family: IBM Plex Sans Arabic;
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: 20px;
+    letter-spacing: 0em;
+}
+
+
+body{
+    background-color: #f0f0f0 !important;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+.center-div {
+    width: 50%;
+    margin:10px auto;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: white;
+}
+
+input[type="date"] {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ced4da; /* Bootstrap default border color */
+    border-radius: 4px;
+    background-color: #fff; /* White background */
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Smooth transition */
+}
+
+/* Style for the date input when it's focused */
+input[type="date"]:focus {
+    border-color: #80bdff; /* Bootstrap default focus border color */
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Bootstrap default focus box shadow */
+}
+
+
+#upload-photo {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+ }
+
+label{
+    cursor: pointer;
+    border-radius: 10px !important;
+    border: 1x solid red !important;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    /* background-color: #f0f0f0 !important; */
+    padding: 10px;
+}
+
+
+@media(max-width:768px){
+    .center-div{
+        width: 80%;
+    }
+}
